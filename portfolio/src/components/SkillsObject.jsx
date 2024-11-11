@@ -1,7 +1,7 @@
-const SkillsObject = ({skill}) => {
+const SkillsObject = ({ image }) => {
     return ( 
-        <div class="subsidiary__section-primary-skills-text skills__individual">
-        <h3>{skill}</h3>
+      <div className="skills__individual">
+        <img className="skills__individual_picture" src={`./img/skills/${image}`} alt="" />
       </div>
      );
 }

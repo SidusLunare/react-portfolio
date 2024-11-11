@@ -1,24 +1,14 @@
+import { Link } from "react-router-dom";
 
 
-const SkillsSection = () => {
+const SkillsSection = ({ children, link, title }) => {
   return (
-    <article class="subsidiary__section-primary">
-      <a class="subsidiary__section-title" href="./skills.html">
-        <h2>Skills</h2>
-      </a>
-      <div class="subsidiary__section-primary-skills">
-        <div class="subsidiary__section-primary-skills-text skills__individual">
-          <h3>HTML & CSS</h3>
-        </div>
-        <div class="subsidiary__section-primary-skills-text skills__individual">
-          <h3>Javascript</h3>
-        </div>
-        <div class="subsidiary__section-primary-skills-text skills__individual">
-          <h3>Linux</h3>
-        </div>
-        <div class="subsidiary__section-primary-skills-text skills__individual">
-          <h3>Frontend Webdevelopment</h3>
-        </div>
+    <article className="subsidiary__section-primary">
+      <h2 className="subsidiary__section-title">
+        <Link to={link}>{title}</Link>
+      </h2>
+      <div className="subsidiary__section-primary-skills">
+        {children}
       </div>
     </article>
   );
