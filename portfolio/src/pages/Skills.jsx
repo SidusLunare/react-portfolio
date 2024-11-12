@@ -12,8 +12,8 @@ const Skills = () => {
       <Navbar>
         <NavbarItem text="Home" link="/home" icon="home.svg" />
         <NavbarItem text="CV" link="/cv" icon="cv.svg" />
-        <NavbarItemSelected text="Skills" link="/Skills" icon="skills.svg" />
-        <NavbarItem text="Projects" link="/Projects" icon="projects.svg" />
+        <NavbarItemSelected text="Skills" link="/skills" icon="skills.svg" />
+        <NavbarItem text="Projects" link="/projects" icon="projects.svg" />
       </Navbar>
       </MainSection>
     </>

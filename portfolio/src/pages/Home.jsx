@@ -15,10 +15,10 @@ const Home = () => {
       <Header />
       <MainSection>
         <Navbar>
-          <NavbarItemSelected text="Home" link="/Home" icon="home.svg" />
+          <NavbarItemSelected text="Home" link="/home" icon="home.svg" />
           <NavbarItem text="CV" link="/cv" icon="cv.svg" />
-          <NavbarItem text="Skills" link="/Skills" icon="skills.svg" />
-          <NavbarItem text="Projects" link="/Projects" icon="projects.svg" />
+          <NavbarItem text="Skills" link="/skills" icon="skills.svg" />
+          <NavbarItem text="Projects" link="/projects" icon="projects.svg" />
         </Navbar>
         <div className="main__homepage">
           <HomepageProfile />
