@@ -1,20 +1,21 @@
+import React, { forwardRef } from 'react';
 
-const AboutMeOverlay = () => {
+const AboutMeOverlay = forwardRef(({ onClick }, ref) => {
   const contactItems = [
     {
-      image: "./img/svg/image 4.svg",
-      title: "LinkedIn",
-      link: "https://www.linkedin.com/in/pascal-van-der-vegt-bb1a90234/",
+      image: './img/svg/image 4.svg',
+      title: 'LinkedIn',
+      link: 'https://www.linkedin.com/in/pascal-van-der-vegt-bb1a90234/',
     },
     {
-      image: "./img/svg/image 6.svg",
-      title: "Github",
-      link: "https://github.com/pascal-vegt",
+      image: './img/svg/image 6.svg',
+      title: 'Github',
+      link: 'https://github.com/pascal-vegt',
     },
     {
-      image: "./img/svg/email.svg",
-      title: "E-mail",
-      link: "mailto:stefanpftf@gmail.com",
+      image: './img/svg/email.svg',
+      title: 'E-mail',
+      link: 'mailto:stefanpftf@gmail.com',
     },
   ];
 
@@ -22,7 +23,7 @@ const AboutMeOverlay = () => {
     <section
       className="aboutme__overlay aboutme__overlay--inactive"
       id="aboutme__overlay"
-      onClick={ActivateOverlay}
+      ref={ref}
     >
       <article className="aboutme__overlay-article">
         <div id="closeAboutmeButton" className="aboutme__close">
@@ -30,7 +31,7 @@ const AboutMeOverlay = () => {
             className="aboutme__close-button"
             src="./img/svg/close.svg"
             alt="Close overlay"
-            onClick={DeactivateOverlay}
+            onClick={onClick}
           />
         </div>
         <h3>About me</h3>
@@ -59,6 +60,6 @@ const AboutMeOverlay = () => {
       </article>
     </section>
   );
-};
+});
 
 export default AboutMeOverlay;
