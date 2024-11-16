@@ -33,7 +33,7 @@ const Projects = () => {
           {projects.map((project) => (
             <SecondNavbarButton
               key={project.id}
-              link={`project_${project.id}`}
+              link={`${project.id}`}
               text={project.name}
             />
           ))}
