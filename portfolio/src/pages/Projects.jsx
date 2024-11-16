@@ -1,12 +1,20 @@
 import NavbarItem from "../components/NavbarItem";
 import NavbarItemSelected from "../components/NavbarItemSelected";
 import Header from "../components/Header";
-import MainSection from "../components/home/MainSection";
+import MainSection from "../components/MainSection";
 import Navbar from "../components/Navbar";
 import SecondNavbar from "../components/projects/SecondNavbar";
 import SecondNavbarButton from "../components/projects/SecondNavbarButton";
+import projects from "../scripts/projects";
+import { useLocation, useParams, useNavigate } from "react-router-dom";
 
 const Projects = () => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+
+  const project = projects.find((project) => project.id == Number(id));
+  // onClick={() => navigate(-1)}
+
   return (
     <>
       <Header />
@@ -22,18 +30,17 @@ const Projects = () => {
           />
         </Navbar>
         <SecondNavbar>
-          <SecondNavbarButton link={"project_ouderavond"} text={"Ouderavond website"} />
-          <SecondNavbarButton link={"project_leersite"} text={"HTML & CSS leerweb"} />
-          <SecondNavbarButton link={"project_portfolio"} text={"Portfolio website"} />
-          <SecondNavbarButton link={"project_gamesite"} text={"Game website"} />
-          <SecondNavbarButton link={"project_donatetoplay"} text={"Donate to Play"} />
+          {projects.map((project) => (
+            <SecondNavbarButton
+              key={project.id}
+              link={`project_${project.id}`}
+              text={project.name}
+            />
+          ))}
         </SecondNavbar>
       </MainSection>
     </>
   );
 };
-
-
-
 
 export default Projects;

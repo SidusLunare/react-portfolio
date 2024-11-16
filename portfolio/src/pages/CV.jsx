@@ -1,7 +1,7 @@
 import NavbarItem from "../components/NavbarItem";
 import NavbarItemSelected from "../components/NavbarItemSelected";
 import Header from "../components/Header";
-import MainSection from "../components/home/MainSection";
+import MainSection from "../components/MainSection";
 import Navbar from "../components/Navbar";
 
 const CV = () => {

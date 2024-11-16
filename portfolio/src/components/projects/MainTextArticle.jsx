@@ -1,6 +1,6 @@
 const MainTextArticle = ( {children}) => {
     return ( 
-        <article class="main__article">
+        <article className="main__article">
             {children}
         </article>
      );

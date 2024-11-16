@@ -1,7 +1,7 @@
-const ProjectsObject = () => {
+const ProjectsObject = ({text}) => {
     return ( 
       <div className="project__individual">
-        <h3>Project Portfolio website</h3>
+        <h3>{text}</h3>
       </div>
      );
 }

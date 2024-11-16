@@ -7,14 +7,9 @@ const ProjectsSection = () => {
         <h2>Projects</h2>
       </div>
       <section>
-        <ProjectsObject/>
-        <div className="project__individual">
-          <h3>Project Ouderavond website</h3>
-        </div>
-        <div className="project__individual">
-          <h3>Project HTML & CSS leerweb</h3>
-        </div>
-        <ProjectsObject />
+        <ProjectsObject text="Project Portfolio website"/>
+        <ProjectsObject text="Project Ouderavond website"/>
+        <ProjectsObject text="Project HTML & CSS leerweb" />
       </section>
     </article>
   );

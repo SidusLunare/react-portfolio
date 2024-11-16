@@ -1,7 +1,7 @@
 import NavbarItem from "../components/NavbarItem";
 import NavbarItemSelected from "../components/NavbarItemSelected";
 import Header from "../components/Header";
-import MainSection from "../components/home/MainSection";
+import MainSection from "../components/MainSection";
 import Navbar from "../components/Navbar";
 import ProjectsSection from "../components/home/ProjectsSection";
 import SkillsSection from "../components/home/SkillsSection";
@@ -23,7 +23,7 @@ const Home = () => {
         <div className="main__homepage">
           <HomepageProfile />
           <SubsidiarySection>
-            <SkillsSection>
+            <SkillsSection link="/skills" title="Skills">
               <SkillsObject image="javascript.png" />
               <SkillsObject image="html.png" />
               <SkillsObject image="css.png" />
